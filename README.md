@@ -7,7 +7,7 @@ Retake's website based on [Nextly](https://github.com/surjithctly/nextly-templat
 ### 1\. Clone this Repository
 
 ```bash
-git clone https://github.com/Retake-EI/retake.fr
+git clone https://github.com/Retake-IT/retake.fr
 ```
 
 ### 2\. Navigate to the directory
