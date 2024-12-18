@@ -27,9 +27,3 @@ pnpm install
 ```
 pnpm run dev
 ```
-
-## ToDo
-
-- [ ] `Get const articles` out of product page
-- [x] Check Grammar
-- [ ] Review CI
