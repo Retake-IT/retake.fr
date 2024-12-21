@@ -2,6 +2,10 @@ name: Docker Build for Dev Branch
 
 on:
   push:
+    paths-ignore:
+      - ".gitignore"
+      - "README.md"
+      - "LICENSE"
     branches:
       - dev
 

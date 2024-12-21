@@ -22,7 +22,7 @@ const benefitOne = {
     },
     {
       title: "Revaloriser",
-      desc: "Votre matériel trouve une seconde vie utile et durable.",
+      desc: "Votre matériel trouve une seconde vie, utile et durable.",
       icon: <ArrowPathRoundedSquareIcon />,
     },
     {

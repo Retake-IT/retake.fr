@@ -12,13 +12,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Retake | Achat et revente de matériel informatique pour les professionnels",
-  description: "Découvrez Retake: rachat et revalorisation de matériel informatique pour les professionnels. Recyclez et valorisez vos équipements !",
+  description: "Découvrez Retake: rachat et reconditionnement de matériel informatique pour les professionnels. Recyclez et valorisez vos équipements !",
   publisher: "Retake",
   keywords: [
     "seconde vie",
     "revente matériel informatique",
     "recyclage informatique",
     "revalorisation informatique",
+    "reconditionnement",
     "Retake",
     "équipement informatique écoresponsable",
   ],
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Retake | Achat et Revente de Matériel Informatique",
-    description: "Achetez, revendez et valorisez du matériel informatique chez Retake. Un service destiné aux pros, particuliers et associations pour des solutions écoresponsables.",
+    description: "Achetez, revendez et valorisez du matériel informatique chez Retake. Un service destiné aux pros pour des solutions écoresponsables.",
     url: "https://retake.fr",
     siteName: "Retake",
     images: [
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image", // Optimisé pour les aperçus Twitter
     title: "Retake | Achat et Revente de Matériel Informatique",
-    description: "Revalorisez et recyclez votre matériel informatique chez Retake, le service pour les pros.",
+    description: "Reconditionnez et recyclez votre matériel informatique chez Retake, le service pour les pros.",
     images: ["https://retake.fr/img/logo.png"],
   },
   icons: {
