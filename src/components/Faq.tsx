@@ -41,7 +41,7 @@ const faqdata = [
   },
   {
     question: "Quels types de matériel informatique acceptez-vous ?",
-    answer: "Nous rachetons une large gamme d’équipements, incluant ordinateurs, serveurs, périphériques et autres matériels IT décommissionnés.",
+    answer: "Nous rachetons une large gamme d’équipements, incluant ordinateurs, serveurs, périphériques et autres matériels IT inutilisés.",
   },
   {
     question: "Nos données sont-elles protégées ?",

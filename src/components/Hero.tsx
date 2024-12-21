@@ -14,7 +14,7 @@ export const Hero = () => {
               Bienvenue chez Retake
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Nous simplifions la gestion de votre matériel informatique décommissionné, tout en offrant des solutions abordables pour les particuliers et les associations.
+            Nous simplifions la gestion de votre matériel informatique inutilisé, tout en offrant des solutions abordables pour les particuliers et les associations.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
