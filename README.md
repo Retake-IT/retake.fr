@@ -1,6 +1,6 @@
 # Retake | retake.fr
 
-![retake.fr](https://retake.fr/wp-content/uploads/2024/06/RETAKE3.png)
+![retake.fr](https://github.com/Retake-IT/.github/raw/main/images/logo.png)
 
 Retake's website based on [Nextly](https://github.com/surjithctly/nextly-template.git)
 
