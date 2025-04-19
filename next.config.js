@@ -2,6 +2,6 @@
 module.exports = {
   output: "standalone",
   images: {
-    formats: ['image/png'],
+    formats: ['image/webp', 'image/avif'],
   },
 };
