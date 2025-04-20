@@ -29,7 +29,7 @@ export const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-            <img src="/img/nature.png" width="616" height="617" alt="Hero Illustration" loading="eager" placeholder="blur"></img>
+            <img src="/img/nature.png" width="616" height="617" alt="Hero Illustration" loading="eager"></img>
             {/* <Image
               src={heroImg}
               width="616"
