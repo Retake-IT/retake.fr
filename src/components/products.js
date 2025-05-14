@@ -1,11 +1,5 @@
 const Products = [
   {
-    imageUrl: "https://img.leboncoin.fr/api/v1/lbcpb1/images/02/60/84/026084690ccdb649efa30f07c2228736a8e6f5a7.jpg?rule=classified-1200x800-webp",
-    title: "Serveur Workstation HP Z440",
-    description: "Serveur / Workstation / Ordinateur de CAO",
-    url: "https://www.leboncoin.fr/ad/ordinateurs/2851218069",
-  },
-  {
     imageUrl: "https://img.leboncoin.fr/api/v1/lbcpb1/images/ef/f3/66/eff3667a2b06a50c1b2bd845692f70b515483238.jpg?rule=classified-1200x800-webp",
     title: "Mini Ordinateur HP ProDesk 600 G2",
     description: "Mini PC HP ProDesk 600 G2",
