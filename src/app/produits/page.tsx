@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import Products from "@/components/products";
+import Image from "next/image";
 
 export default function ArticlesPage() {
   return (
@@ -10,10 +11,12 @@ export default function ArticlesPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Products.map((article, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg dark:bg-trueGray-800">
-              <img
-                src={article.imageUrl}
-                alt={article.title}
-                className="w-full h-48 object-cover rounded-t-lg mb-4"
+              <Image
+              src={article.imageUrl}
+              alt={article.title}
+              className="w-full h-48 object-cover rounded-t-lg mb-4"
+              width={1200}
+              height={800}
               />
               <h2 className="text-xl font-semibold text-gray-800 mb-2 dark:text-white">{article.title}</h2>
               <p className="text-gray-600 mb-4 dark:text-grey-200">{article.description}</p>
