@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://retake.fr/sitemap.xml

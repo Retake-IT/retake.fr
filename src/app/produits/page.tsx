@@ -1,0 +1,56 @@
+import { Container } from "@/components/Container";
+import Products, { Product } from "@/components/products";
+import Image from "next/image";
+
+const productsData: Product[] = Products;
+
+export default function ArticlesPage() {
+  if (!productsData || productsData.length === 0) {
+    return (
+      <Container className="py-12">
+        <h1 className="text-3xl font-bold text-center mb-8">
+          Plus de stock disponible
+        </h1>
+      </Container>
+    );
+  }
+
+  return (
+    <Container>
+      <div className="py-12">
+        <h1 className="text-3xl font-bold text-center mb-8">
+          Nos Articles
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {productsData.map((product, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg dark:bg-trueGray-800"
+            >
+              <Image
+                src={product.imageUrl}
+                alt={product.title}
+                className="w-full h-48 object-cover rounded-t-lg mb-4"
+                width={1200}
+                height={800}
+              />
+              <h2 className="text-xl font-semibold text-gray-800 mb-2 dark:text-white">
+                {product.title}
+              </h2>
+              <p className="text-gray-600 mb-4 dark:text-grey-200">
+                {product.description}
+              </p>
+              <a
+                href={product.url}
+                className="text-[#7ed957] hover:text-indigo-500"
+              >
+                Voir l'article
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  );
+}
