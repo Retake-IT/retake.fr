@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/nature.png";
 import usocomeLogo from "../../public/img/usocome-logo.png";
+import emaitLogo from "../../public/img/emait-logo.png"
 
 export const Hero = () => {
   return (
@@ -52,6 +53,11 @@ export const Hero = () => {
             <div className="pt-2 text-gray-400 dark:text-gray-400">
               <Link href={"https://www.usocome.com/"}>
                 <Image className="object-contain h-48 w-96" src={usocomeLogo} alt="Usocome Logo"></Image>
+              </Link>
+            </div>
+            <div className="pt-2 text-gray-400 dark:text-gray-400">
+              <Link href={"https://emait.fr/"}>
+                <Image className="object-contain h-48 w-96" src={emaitLogo} alt="Emait Logo"></Image>
               </Link>
             </div>
           </div>
