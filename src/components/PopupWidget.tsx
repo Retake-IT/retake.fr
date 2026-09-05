@@ -268,6 +268,22 @@ export function PopupWidget() {
                           )}
                         </button>
                       </div>
+                      <p className="mb-3 text-xs text-gray-400">
+                        En envoyant ce formulaire, vous acceptez que les
+                        informations saisies soient utilisées pour répondre à
+                        votre demande. Elles sont transmises via Web3Forms
+                        (hébergement hors Union européenne) et conservées jusqu&apos;à
+                        12&nbsp;mois. Pour connaître vos droits, consultez notre{" "}
+                        <a
+                          href="/politique-de-confidentialite"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-indigo-500"
+                        >
+                          politique de confidentialité
+                        </a>
+                        .
+                      </p>
                       <p
                         className="text-xs text-center text-gray-400"
                         id="result"
