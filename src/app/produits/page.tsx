@@ -1,8 +1,21 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import Products, { Product } from "@/components/products";
 import Image from "next/image";
 
 const productsData: Product[] = Products;
+
+export const metadata: Metadata = {
+  title: "Nos articles reconditionnés",
+  description:
+    "Le matériel informatique reconditionné actuellement disponible à la vente chez Retake : ordinateurs, écrans, serveurs et périphériques.",
+  alternates: { canonical: "/produits" },
+  // Rétabli automatiquement dès qu'il y a du stock (voir plus bas).
+  robots:
+    !productsData || productsData.length === 0
+      ? { index: false, follow: true }
+      : undefined,
+};
 
 export default function ArticlesPage() {
   if (!productsData || productsData.length === 0) {
