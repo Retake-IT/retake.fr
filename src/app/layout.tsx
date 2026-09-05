@@ -76,10 +76,10 @@ export default function RootLayout({
       <head>
         <script defer src="https://cloud.umami.is/script.js" data-website-id="1eff9878-3eb9-4856-b9f5-134aa7b2ce0b"></script>
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <ThemeProvider attribute="class">
           <Navbar />
-          <div>{children}</div>
+          <div className="flex-grow">{children}</div>
           <Footer />
           <PopupWidget />
         </ThemeProvider>
