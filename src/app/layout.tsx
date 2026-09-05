@@ -74,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <script defer src="https://analytics.retake.fr/script.js" data-website-id="2cabddab-19cf-4987-8d2a-b573ec9fc714"></script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="1eff9878-3eb9-4856-b9f5-134aa7b2ce0b"></script>
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
