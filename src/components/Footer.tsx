@@ -117,7 +117,7 @@ export function Footer() {
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a> */}
-              <a href="https://www.linkedin.com/company/retake-léo-nonnenmacher" target="_blank" rel="noopener">
+              <a href="https://www.linkedin.com/company/retake-leo-nonnenmacher" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>

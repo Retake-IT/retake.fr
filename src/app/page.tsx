@@ -24,8 +24,7 @@ export default function Home() {
         id="benefits"
         title="Pourquoi choisir Retake ?"
       >
-        Chez Retake, nous cherchons à donner une seconde vie à votre matériel informatique en suivant une démarche transparente, sans prise de tête et tournée vers un impact durable,
-        bénéfique pour tous : vous, les particuliers, les associations et la planète.
+        Retake est une entreprise individuelle basée à Strasbourg, créée en 2024. Nous rachetons le matériel informatique inutilisé des entreprises — ordinateurs, écrans, serveurs, périphériques — effaçons les données selon les recommandations de l&apos;ANSSI, reconditionnons les équipements et les revendons à prix accessible aux particuliers et aux associations. Le matériel non réparable est orienté vers des filières de recyclage agréées.
       </SectionTitle>
 
       <Benefits data={benefitOne} />

@@ -1,0 +1,31 @@
+# Retake
+
+> Retake rachète le matériel informatique inutilisé des entreprises, efface les
+> données, reconditionne les équipements et les revend à prix accessible aux
+> particuliers et aux associations. Entreprise individuelle basée à Strasbourg,
+> créée en 2024.
+
+## Pages
+
+- [Accueil](https://retake.fr/) : présentation de l'activité, avantages, foire aux questions
+- [Produits](https://retake.fr/produits) : matériel informatique reconditionné actuellement disponible à la vente
+
+## Informations légales
+
+- [Mentions légales](https://retake.fr/mentions-legales)
+- [Conditions générales de vente](https://retake.fr/cgv)
+- [Politique de confidentialité](https://retake.fr/politique-de-confidentialite)
+
+## Faits
+
+- Raison sociale : Léo Nonnenmacher — Retake (entrepreneur individuel)
+- Adresse : 8 rue de la Fonderie, 67000 Strasbourg, France
+- Contact : contact@retake.fr — +33 6 11 03 60 02
+- R.C.S. Strasbourg 984 971 499
+- Création : 2024
+- Activité : rachat, effacement de données (selon les recommandations de l'ANSSI), reconditionnement et revente de matériel informatique d'occasion
+- Matériel concerné : ordinateurs portables et fixes, écrans, serveurs, équipements réseau, composants, imprimantes et scanners
+- Fournisseurs du rachat : entreprises. Acheteurs de la revente : particuliers et associations
+- Canal de vente : plateforme leboncoin
+- Zone desservie : France
+- Le matériel non réparable est orienté vers des filières de recyclage agréées (DEEE)
