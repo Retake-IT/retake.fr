@@ -14,11 +14,9 @@ export function Footer() {
   ];
 
   const legal = [
-    { name: "Mentions Légales", href: "/legal_notice.pdf" },
-    { name: "CGV", href: "/gtc.pdf" }
-    // { name: "Terms", href: "/terms" },
-    // { name: "Privacy", href: "/privacy" },
-    // { name: "Legal", href: "/legal" },
+    { name: "Mentions Légales", href: "/mentions-legales" },
+    { name: "CGV", href: "/cgv" },
+    { name: "Politique de confidentialité", href: "/politique-de-confidentialite" },
   ];
   return (
     <div id="footer" className="relative">
