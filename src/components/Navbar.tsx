@@ -27,7 +27,7 @@ export const Navbar = () => {
             <ThemeChanger />
             <Link
               href="/#footer"
-              className="hidden px-5 py-2 text-white bg-[#5a9e2f] rounded-md sm:inline-block hover:bg-[#4d8a27]"
+              className="hidden px-5 py-2 text-white bg-[#3f7d1f] rounded-md sm:inline-block hover:bg-[#33661a]"
             >
               Nous contacter
             </Link>
@@ -51,7 +51,7 @@ export const Navbar = () => {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="inline-block px-4 py-2 text-gray-600 rounded-md dark:text-gray-300 hover:text-[#5a9e2f] focus:text-[#5a9e2f] focus:outline-none"
+                  className="inline-block px-4 py-2 text-gray-600 rounded-md dark:text-gray-300 hover:text-[#3f7d1f] focus:text-[#3f7d1f] focus:outline-none"
                 >
                   {item.label}
                 </Link>
@@ -74,7 +74,7 @@ export const Navbar = () => {
             <Link
               href="/#footer"
               onClick={() => close()}
-              className="w-full px-4 py-2 mt-2 text-center text-white bg-[#5a9e2f] rounded-md hover:bg-[#4d8a27]"
+              className="w-full px-4 py-2 mt-2 text-center text-white bg-[#3f7d1f] rounded-md hover:bg-[#33661a]"
             >
               Nous contacter
             </Link>

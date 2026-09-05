@@ -38,7 +38,7 @@ export default function ArticlesPage() {
           renouvelé régulièrement. Écrivez-nous à{" "}
           <a
             href="mailto:contact@retake.fr"
-            className="text-[#5a9e2f] underline hover:text-indigo-500"
+            className="text-[#3f7d1f] dark:text-[#7ed957] underline hover:text-indigo-500"
           >
             contact@retake.fr
           </a>{" "}
@@ -77,7 +77,7 @@ export default function ArticlesPage() {
               </p>
               <a
                 href={product.url}
-                className="text-[#7ed957] hover:text-indigo-500"
+                className="text-[#3f7d1f] dark:text-[#7ed957] hover:text-indigo-500"
               >
                 Voir l'article
               </a>

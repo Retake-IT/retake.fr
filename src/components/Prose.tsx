@@ -36,7 +36,7 @@ export function Prose({ title, updatedAt, slug, children }: Readonly<ProseProps>
           [&_p]:my-4 [&_p]:leading-relaxed
           [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1
           [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1
-          [&_a]:text-[#7ed957] [&_a]:underline hover:[&_a]:text-indigo-500
+          [&_a]:text-[#3f7d1f] dark:[&_a]:text-[#7ed957] [&_a]:underline hover:[&_a]:text-indigo-500
           [&_blockquote]:border-l-4 [&_blockquote]:border-gray-200 [&_blockquote]:dark:border-trueGray-700 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-500
           [&_address]:not-italic
         "

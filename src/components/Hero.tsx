@@ -22,7 +22,7 @@ export const Hero = () => {
               <a
                 href="#benefits"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#7ed957] rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#3f7d1f] rounded-md ">
                 En savoir plus
               </a>
             </div>
@@ -36,8 +36,8 @@ export const Hero = () => {
               width="616"
               height="617"
               className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
+              alt="Illustration : un paysage naturel évoquant la seconde vie du matériel informatique"
+              priority
             />
           </div>
         </div>

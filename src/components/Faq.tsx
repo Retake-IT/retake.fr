@@ -19,7 +19,7 @@ export const Faq = () => {
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-[#7ed957]`}
+                      } w-5 h-5 text-[#3f7d1f] dark:text-[#7ed957]`}
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
