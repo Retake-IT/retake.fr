@@ -31,7 +31,7 @@ export default function Home() {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
 
-      <SectionTitle preTitle="FAQ" title="Foire aux questions">
+      <SectionTitle id="faq" preTitle="FAQ" title="Foire aux questions">
         Parce qu'on se pose tous des questions !
       </SectionTitle>
 
