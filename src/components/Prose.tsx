@@ -1,9 +1,13 @@
 import React from "react";
 import { Container } from "@/components/Container";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structured-data";
 
 interface ProseProps {
   title: string;
   updatedAt?: string;
+  /** Slug (without leading slash) used to emit a BreadcrumbList. */
+  slug?: string;
   children: React.ReactNode;
 }
 
@@ -11,9 +15,17 @@ interface ProseProps {
  * Shared wrapper for legal / text pages (mentions légales, CGV, …).
  * Styles raw HTML children so pages stay plain JSX without a typography plugin.
  */
-export function Prose({ title, updatedAt, children }: Readonly<ProseProps>) {
+export function Prose({ title, updatedAt, slug, children }: Readonly<ProseProps>) {
   return (
     <Container className="max-w-3xl">
+      {slug && (
+        <JsonLd
+          data={breadcrumbSchema([
+            { name: "Accueil", path: "/" },
+            { name: title, path: `/${slug}` },
+          ])}
+        />
+      )}
       <article
         className="
           py-10
@@ -24,7 +36,7 @@ export function Prose({ title, updatedAt, children }: Readonly<ProseProps>) {
           [&_p]:my-4 [&_p]:leading-relaxed
           [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1
           [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1
-          [&_a]:text-[#7ed957] [&_a]:underline hover:[&_a]:text-indigo-500
+          [&_a]:text-[#3f7d1f] dark:[&_a]:text-[#7ed957] [&_a]:underline hover:[&_a]:text-indigo-500
           [&_blockquote]:border-l-4 [&_blockquote]:border-gray-200 [&_blockquote]:dark:border-trueGray-700 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-500
           [&_address]:not-italic
         "

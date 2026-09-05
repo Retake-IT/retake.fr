@@ -58,7 +58,7 @@ export function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#7ed957] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-[#7ed957] focus:bg-[#7ed957] ease">
+            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#3f7d1f] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-[#3f7d1f] focus:bg-[#3f7d1f] ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -118,7 +118,7 @@ export function PopupWidget() {
               as="div"
             >
               <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
-                <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#7ed957]">
+                <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#3f7d1f]">
                   <h3 className="text-lg text-white">Une question ?</h3>
                   <p className="text-white opacity-50">
                     On vous répond en quelque heures !
@@ -240,7 +240,7 @@ export function PopupWidget() {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-[#7ed957] rounded-md focus:bg-[#7ed957] focus:outline-none"
+                          className="w-full px-3 py-4 text-white bg-[#3f7d1f] rounded-md focus:bg-[#3f7d1f] focus:outline-none"
                         >
                           {isSubmitting ? (
                             <svg

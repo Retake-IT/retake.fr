@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# image sources (optimized outputs in public/img/*.webp are committed)
+/assets/

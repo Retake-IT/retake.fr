@@ -6,36 +6,34 @@ export const dynamic = "force-static";
 const BASE_URL = "https://retake.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
   return [
     {
       url: `${BASE_URL}/`,
-      lastModified,
+      lastModified: "2026-09-06",
       changeFrequency: "monthly",
       priority: 1,
     },
     {
       url: `${BASE_URL}/produits/`,
-      lastModified,
+      lastModified: "2026-09-06",
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/mentions-legales/`,
-      lastModified,
+      lastModified: "2026-09-06",
       changeFrequency: "yearly",
       priority: 0.2,
     },
     {
       url: `${BASE_URL}/cgv/`,
-      lastModified,
+      lastModified: "2024-11-22",
       changeFrequency: "yearly",
       priority: 0.2,
     },
     {
       url: `${BASE_URL}/politique-de-confidentialite/`,
-      lastModified,
+      lastModified: "2026-09-06",
       changeFrequency: "yearly",
       priority: 0.2,
     },

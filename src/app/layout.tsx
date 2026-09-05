@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
@@ -6,63 +6,73 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget } from "@/components/PopupWidget";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/structured-data";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
+const SITE_URL = "https://retake.fr";
+const SITE_NAME = "Retake";
+const DEFAULT_TITLE =
+  "Retake — Rachat et reconditionnement de matériel informatique";
+const DEFAULT_DESCRIPTION =
+  "Retake rachète le matériel informatique des entreprises, le reconditionne et le revend à prix accessible aux particuliers et associations. Basé à Strasbourg.";
+
 export const metadata: Metadata = {
-  title: "Retake | Achat et revente de matériel informatique pour les professionnels",
-  description: "Découvrez Retake: rachat et reconditionnement de matériel informatique pour les professionnels. Recyclez et valorisez vos équipements !",
-  publisher: "Retake",
-  keywords: [
-    "seconde vie",
-    "revente matériel informatique",
-    "recyclage informatique",
-    "revalorisation informatique",
-    "reconditionnement",
-    "Retake",
-    "équipement informatique écoresponsable",
-  ],
-  alternates: {
-    canonical: "https://retake.fr",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: "%s | Retake",
   },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  publisher: SITE_NAME,
+  authors: [{ name: "Léo Nonnenmacher — Retake", url: SITE_URL }],
   robots: {
     index: true,
     follow: true,
     googleBot: {
-      notranslate: true,
       "max-snippet": -1,
       "max-image-preview": "large",
       "max-video-preview": -1,
     },
   },
   openGraph: {
-    title: "Retake | Achat et Revente de Matériel Informatique",
-    description: "Achetez, revendez et valorisez du matériel informatique chez Retake. Un service destiné aux pros pour des solutions écoresponsables.",
-    url: "https://retake.fr",
-    siteName: "Retake",
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "fr_FR",
+    url: SITE_URL,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
     images: [
       {
-        url: "https://retake.fr/img/logo.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Retake - Achat et revente de matériel informatique",
+        alt: "Retake — rachat et reconditionnement de matériel informatique",
       },
     ],
-    locale: "fr_FR",
-    type: "website",
   },
   twitter: {
-    card: "summary_large_image", // Optimisé pour les aperçus Twitter
-    title: "Retake | Achat et Revente de Matériel Informatique",
-    description: "Reconditionnez et recyclez votre matériel informatique chez Retake, le service pour les pros.",
-    images: ["https://retake.fr/img/logo.png"],
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: ["/og.png"],
   },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#171717" },
+  ],
 };
 
 
@@ -77,6 +87,7 @@ export default function RootLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="1eff9878-3eb9-4856-b9f5-134aa7b2ce0b"></script>
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <JsonLd data={[organizationSchema, websiteSchema]} />
         <ThemeProvider attribute="class">
           <Navbar />
           <div className="flex-grow">{children}</div>

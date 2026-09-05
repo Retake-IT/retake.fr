@@ -5,6 +5,7 @@ interface SectionTitleProps {
   preTitle?: string;
   title?: string;
   align?: "left" | "center";
+  id?: string;
   children?: React.ReactNode;
 }
 
@@ -15,13 +16,13 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
       {props.preTitle && (
-        <div className="text-sm font-bold tracking-wider text-[#7ed957] uppercase">
+        <div className="text-sm font-bold tracking-wider text-[#3f7d1f] dark:text-[#7ed957] uppercase">
           {props.preTitle}
         </div>
       )}
 
       {props.title && (
-        <h2 id="benefits" className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+        <h2 id={props.id} className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
           {props.title}
         </h2>
       )}

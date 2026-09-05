@@ -1,25 +1,59 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import Products, { Product } from "@/components/products";
 import Image from "next/image";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structured-data";
+
+const breadcrumb = breadcrumbSchema([
+  { name: "Accueil", path: "/" },
+  { name: "Produits", path: "/produits" },
+]);
 
 const productsData: Product[] = Products;
+
+export const metadata: Metadata = {
+  title: "Nos articles reconditionnés",
+  description:
+    "Le matériel informatique reconditionné actuellement disponible à la vente chez Retake : ordinateurs, écrans, serveurs et périphériques.",
+  alternates: { canonical: "/produits" },
+  // Rétabli automatiquement dès qu'il y a du stock (voir plus bas).
+  robots:
+    !productsData || productsData.length === 0
+      ? { index: false, follow: true }
+      : undefined,
+};
 
 export default function ArticlesPage() {
   if (!productsData || productsData.length === 0) {
     return (
       <Container className="py-12">
+        <JsonLd data={breadcrumb} />
         <h1 className="text-3xl font-bold text-center mb-8">
           Plus de stock disponible
         </h1>
+        <p className="max-w-xl mx-auto text-center text-gray-500 dark:text-gray-400">
+          Aucun article n&apos;est disponible pour le moment. Le stock provient
+          des reprises de matériel effectuées auprès des entreprises et est
+          renouvelé régulièrement. Écrivez-nous à{" "}
+          <a
+            href="mailto:contact@retake.fr"
+            className="text-[#3f7d1f] dark:text-[#7ed957] underline hover:text-indigo-500"
+          >
+            contact@retake.fr
+          </a>{" "}
+          pour être prévenu des prochaines disponibilités.
+        </p>
       </Container>
     );
   }
 
   return (
     <Container>
+      <JsonLd data={breadcrumb} />
       <div className="py-12">
         <h1 className="text-3xl font-bold text-center mb-8">
-          Nos Articles
+          Nos articles reconditionnés
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,7 +77,7 @@ export default function ArticlesPage() {
               </p>
               <a
                 href={product.url}
-                className="text-[#7ed957] hover:text-indigo-500"
+                className="text-[#3f7d1f] dark:text-[#7ed957] hover:text-indigo-500"
               >
                 Voir l'article
               </a>

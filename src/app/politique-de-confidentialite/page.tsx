@@ -13,6 +13,7 @@ export default function PolitiqueConfidentialitePage() {
     <Prose
       title="Politique de confidentialité"
       updatedAt="6 septembre 2026"
+      slug="politique-de-confidentialite"
     >
       <p>
         La présente politique décrit la manière dont les données à caractère

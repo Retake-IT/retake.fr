@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/nature.png";
-import usocomeLogo from "../../public/img/usocome-logo.png";
-import emaitLogo from "../../public/img/emait-logo.png"
+import heroImg from "../../public/img/nature.webp";
+import usocomeLogo from "../../public/img/usocome-logo.webp";
+import emaitLogo from "../../public/img/emait-logo.webp"
 
 export const Hero = () => {
   return (
@@ -12,17 +12,17 @@ export const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Bienvenue chez Retake
+              Rachat et reconditionnement de matériel informatique
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Nous simplifions la gestion de votre matériel informatique inutilisé, tout en offrant des solutions abordables pour les particuliers et les associations.
+              Retake rachète le matériel informatique inutilisé des entreprises, le reconditionne et lui donne une seconde vie à prix accessible pour les particuliers et les associations.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="#benefits"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#7ed957] rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#3f7d1f] rounded-md ">
                 En savoir plus
               </a>
             </div>
@@ -36,8 +36,8 @@ export const Hero = () => {
               width="616"
               height="617"
               className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
+              alt="Illustration : un paysage naturel évoquant la seconde vie du matériel informatique"
+              priority
             />
           </div>
         </div>

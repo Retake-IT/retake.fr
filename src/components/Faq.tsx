@@ -3,6 +3,7 @@ import React from "react";
 import { Container } from "@/components/Container";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { faqdata } from "@/components/faq-data";
 
 export const Faq = () => {
   return (
@@ -18,7 +19,7 @@ export const Faq = () => {
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-[#7ed957]`}
+                      } w-5 h-5 text-[#3f7d1f] dark:text-[#7ed957]`}
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
@@ -34,23 +35,3 @@ export const Faq = () => {
   );
 }
 
-const faqdata = [
-  {
-    question: "Depuis combien de temps Retake existe ?",
-    answer: "Retake existe depuis le début de l'année 2024 !",
-  },
-  {
-    question: "Quels types de matériel informatique acceptez-vous ?",
-    answer: "Nous rachetons une large gamme d’équipements, incluant ordinateurs, serveurs, périphériques et autres matériels IT inutilisés.",
-  },
-  {
-    question: "Nos données sont-elles protégées ?",
-    answer:
-      "Oui ! Retake s'engage à effacer vos données en suivant les recommandations de l'ANSII et vous envoie les rapports d'effacement sur demande.",
-  },
-  {
-    question: "Que se passe-t-il si mon matériel est trop vieux ou irréparable ?",
-    answer:
-      "Si un équipement ne peut pas être revalorisé, nous nous assurons qu’il soit recyclé dans des centres agréés, conformément aux réglementations en vigueur.",
-  },
-];
