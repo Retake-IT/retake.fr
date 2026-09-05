@@ -13,6 +13,7 @@ export default function CgvPage() {
     <Prose
       title="Conditions générales de vente"
       updatedAt="En vigueur au 22 novembre 2024"
+      slug="cgv"
     >
       <h2>Article 1 — Champ d&apos;application</h2>
       <p>

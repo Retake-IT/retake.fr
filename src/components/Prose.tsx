@@ -1,9 +1,13 @@
 import React from "react";
 import { Container } from "@/components/Container";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structured-data";
 
 interface ProseProps {
   title: string;
   updatedAt?: string;
+  /** Slug (without leading slash) used to emit a BreadcrumbList. */
+  slug?: string;
   children: React.ReactNode;
 }
 
@@ -11,9 +15,17 @@ interface ProseProps {
  * Shared wrapper for legal / text pages (mentions légales, CGV, …).
  * Styles raw HTML children so pages stay plain JSX without a typography plugin.
  */
-export function Prose({ title, updatedAt, children }: Readonly<ProseProps>) {
+export function Prose({ title, updatedAt, slug, children }: Readonly<ProseProps>) {
   return (
     <Container className="max-w-3xl">
+      {slug && (
+        <JsonLd
+          data={breadcrumbSchema([
+            { name: "Accueil", path: "/" },
+            { name: title, path: `/${slug}` },
+          ])}
+        />
+      )}
       <article
         className="
           py-10

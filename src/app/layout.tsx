@@ -6,6 +6,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget } from "@/components/PopupWidget";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/structured-data";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -77,6 +79,7 @@ export default function RootLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="1eff9878-3eb9-4856-b9f5-134aa7b2ce0b"></script>
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <JsonLd data={[organizationSchema, websiteSchema]} />
         <ThemeProvider attribute="class">
           <Navbar />
           <div className="flex-grow">{children}</div>

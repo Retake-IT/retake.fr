@@ -5,6 +5,9 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
 
 import { Faq } from "@/components/Faq";
+import { JsonLd } from "@/components/JsonLd";
+import { faqPageSchema } from "@/lib/structured-data";
+import { faqdata } from "@/components/faq-data";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 
@@ -15,6 +18,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Container>
+      <JsonLd data={faqPageSchema(faqdata)} />
       <Hero />
       <SectionTitle
         id="benefits"
