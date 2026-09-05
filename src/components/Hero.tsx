@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/nature.png";
-import usocomeLogo from "../../public/img/usocome-logo.png";
-import emaitLogo from "../../public/img/emait-logo.png"
+import heroImg from "../../public/img/nature.webp";
+import usocomeLogo from "../../public/img/usocome-logo.webp";
+import emaitLogo from "../../public/img/emait-logo.webp"
 
 export const Hero = () => {
   return (

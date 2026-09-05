@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
-import retakeLogo from "../../public/img/logo.png";
+import retakeLogo from "../../public/img/logo.webp";
 
 export function Footer() {
   const navigation = [

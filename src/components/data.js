@@ -7,8 +7,8 @@ import {
   CogIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/building.png";
-import benefitTwoImg from "../../public/img/house.png";
+import benefitOneImg from "../../public/img/building.webp";
+import benefitTwoImg from "../../public/img/house.webp";
 
 const benefitOne = {
   title: "Notre mission",

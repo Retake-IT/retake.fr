@@ -2,7 +2,7 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
-import retakeLogo from "../../public/img/logo.png";
+import retakeLogo from "../../public/img/logo.webp";
 // import { Disclosure } from "@headlessui/react";
 
 export const Navbar = () => {
