@@ -58,7 +58,7 @@ export function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#3f7d1f] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-[#3f7d1f] focus:bg-[#3f7d1f] ease">
+            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#7ed957] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-[#6ac743] focus:bg-[#6ac743] ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -69,7 +69,7 @@ export function PopupWidget() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute w-6 h-6 text-white"
+                  className="absolute w-6 h-6 text-[#0b0f0a]"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -89,7 +89,7 @@ export function PopupWidget() {
                 enterFrom="opacity-0 rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 rotate-45"
-                className="absolute w-6 h-6 text-white"
+                className="absolute w-6 h-6 text-[#0b0f0a]"
                 as={"div"}
               >
                 <svg
@@ -118,9 +118,9 @@ export function PopupWidget() {
               as="div"
             >
               <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
-                <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#3f7d1f]">
-                  <h3 className="text-lg text-white">Une question ?</h3>
-                  <p className="text-white opacity-50">
+                <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#7ed957]">
+                  <h3 className="text-lg font-medium text-[#0b0f0a]">Une question ?</h3>
+                  <p className="text-[#0b0f0a] opacity-70">
                     On vous répond en quelque heures !
                   </p>
                 </div>
@@ -240,11 +240,11 @@ export function PopupWidget() {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-[#3f7d1f] rounded-md focus:bg-[#3f7d1f] focus:outline-none"
+                          className="w-full px-3 py-4 font-medium text-[#0b0f0a] bg-[#7ed957] rounded-md hover:bg-[#6ac743] focus:bg-[#6ac743] focus:outline-none"
                         >
                           {isSubmitting ? (
                             <svg
-                              className="w-5 h-5 mx-auto text-white animate-spin"
+                              className="w-5 h-5 mx-auto text-[#0b0f0a] animate-spin"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"

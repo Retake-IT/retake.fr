@@ -15,7 +15,7 @@ export const Navbar = () => {
           <ThemeChanger />
           <Link
             href="/#footer"
-            className="px-5 py-2 text-white bg-[#3f7d1f] rounded-md hover:bg-[#33661a]"
+            className="px-5 py-2 font-medium text-[#0b0f0a] bg-[#7ed957] rounded-md hover:bg-[#6ac743]"
           >
             Nous contacter
           </Link>
