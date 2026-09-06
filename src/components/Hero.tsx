@@ -22,7 +22,7 @@ export const Hero = () => {
               <a
                 href="#benefits"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#3f7d1f] rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-[#0b0f0a] bg-[#7ed957] rounded-md hover:bg-[#6ac743]">
                 En savoir plus
               </a>
             </div>
